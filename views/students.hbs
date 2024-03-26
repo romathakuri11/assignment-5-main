@@ -1,0 +1,43 @@
+<div>
+  <div>
+    <br />
+    <h2>Students</h2>
+    <hr />
+    {{#if students}}
+    <div class="table-respnsive">
+      <table class="table">
+        <tr>
+          <th>Student Num</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Status</th>
+          <th>Course ID</th>
+        </tr>
+        {{#each students}}
+          <tr>
+            <td>{{this.studentNum}}</td>
+            <td>{{this.firstName}} {{this.lastName}}</td>
+            <td><a href="mailto:{{this.email}}" style="color: rgb(53, 53, 209) !important;">{{this.email}}</a></td>
+            <td>{{this.addressStreet}},{{this.addressCity}},{{this.addressProvince}}.</td>
+            <td>{{this.status}}</td>
+            <td>{{this.course}}</td>
+          </tr>
+        {{/each}}
+      </table>
+    </div>
+    {{/if}}
+    {{#unless students}}
+      <div class="col-md-12">
+        <div class="col-md-12 text-center">
+          <strong>{{message}}</strong>
+        </div>
+      </div>
+    {{/unless}}
+
+    {{!-- {{#each students}}
+            <p>{{this.firstName}} {{this.lastName}}</p>
+        {{/each}} --}}
+    {{! <br> }}
+  </div>
+</div>

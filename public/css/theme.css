@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 3px solid rgb(205, 204, 202);
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: rgb(159, 175, 205);
+}
+tr:nth-child(odd) {
+  background-color: rgb(224, 201, 166);
+}
+
+.nav1 {
+  background-image: linear-gradient(
+    to right,
+    rgb(131, 146, 105),
+    rgb(33, 36, 33)
+  );
+  height: 85px;
+  box-shadow: 1px 2px 3px 1px rgb(97, 72, 51) outset !important;
+}
+.nav {
+  font-family: "Open Sans", serif;
+  color: rgb(38, 36, 73);
+  text-shadow: 1.25px 1.25px;
+  font-size: 30px !important;
+}
+a {
+  color: azure !important;
+}
+a:hover {
+  color: rgb(194, 194, 194) !important;
+}
+html,
+body {
+  background-image: linear-gradient(to right, cornsilk, transparent) !important;
+  background-color: rgb(29, 53, 68);
+}
+.abc {
+  background-color: lightgray !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: darkblue;
+  text-shadow: 1px 1px;
+}
+
+.spacer {
+  margin-top: 25px;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .job-box {
+  margin-top: 20px;
+}
+.job-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.job-option, .status) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .status {
+  column-gap: 5px;
+}
+.status input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.status input, .status label) {
+  cursor: pointer;
+}
+.status label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+.active {
+  font-weight: bold;
+}
